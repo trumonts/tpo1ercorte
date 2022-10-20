@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    background-color: rgb(187, 214, 187);
+    border-radius: 10em;
+    align-content: center;
+    background-image: url('img/background.jpg');
+
+}
+
+.contenedor-header {
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+header h1 {
+    color: rgb(133, 92, 92);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+}
+
+header a img {
+    width: 100px;
+    height: 100px;
+}
+
+.seccion-header {
+    text-align: center;
+    text-transform: capitalize;
+    font-style: normal;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* Menu Enlaces*/
+nav a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(59, 177, 171);
+    text-decoration: underline;
+}
+
+.seccion1-nosotros {
+    background-color: azure;
+    background: #7F7FD5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+margin-left: auto;
+padding-left: 15px;
+padding-right: 15px
+}
+
+.seccion1-nosotros .contenedor-seccion1 .imagen-central a img {
+    width: 60vw;
+}
+
+.texto-nosotros{
+    color: white;
+    background-color: rgb(59, 124, 124);
+}
+
+
+.info-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.info-footer h4{
+    margin-left: 25px;
+    border-bottom: 5px solid rgb(170, 8, 211);
+}
+.social-icons{
+    display: flex;
+   justify-content: center;
+   margin-bottom: 0.5rem;
+   
+   animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  /*Test de Border Color Animation
+  */
+
+  
+    @keyframes rotate {
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+    .social
+
+    
+    .social-icons {
+        
+    }
+  
+.final-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
