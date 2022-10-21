@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Inicio - Farmacia Activa</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3e531ed889.js" crossorigin="anonymous"></script>
 </head>
-</head>
-<body>
-   
-    <header>
-        <div class="contenedor-header">
-            <a href="Index.html"> <img src="./img/logo.png" alt=""></a>
-            <h1> Farmacia DYL</h1>
 
+<body>
+    <header>
+        <div class="contenedor">
+            <a href="Index.html"> <img src="../img/shop1255000.logo.png" alt="" class="logo"></a>
+            <a href="./Index.html" class="item-menu">INICIO</a>
+            <a href="./productos.html" class="item-menu">PRODUCTOS</a>
+            <a href="./alquileres.html" class="item-menu">ALQUILERES</a>
+            <a href="./contacto.html" class="item-menu"> CONTACTO</a>
+
+            
         </div>
     </header>
-    <nav class="menu-principal">
-        <a href="./Index.html" class="item-menu">Inicio</a>
-        <a href="./productos.html" class="item-menu">Productos</a>
-        <a href="./alquileres.html" class="item-menu">Alquileres</a>
-        <a href="./contacto.html" class="item-menu"> Contacto</a>
-    </nav>
-
-
-
-
+    <main>
+        <div class="contenedor-form">
+            <form id="formulario" action="show_data.html" target="_blank">
+            <h3>Formulario de Registro</h3>
+            <br>
+                <label for="firstname">Nombre:</label><input type="text" name="firstname" placeholder="Ingrese su nombre" required><br>
+            <br>
+                <label for="apellido">Apellido:</label><input type="text" name= "lastname" placeholder="Ingrese su apellido" required><br>
+            <br>
+                <label for="direccion">Dirección:</label><input type="text" name="direccion" placeholder="Ingrese la direccion" required><br>
+            <br>
+                <label for="ciudad">Ciudad:</label><input type="text" name="ciudad" placeholder="Ingrese su ciudad"><br>
+            <br>
+                <label >Comentarios:</label><textarea form="formulario" placeholder="Ingrese un comentario" name="comentario" cols="50" rows="10"></textarea><br>
+            <br>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.79363931407!2d-58.41498328519595!3d-34.58408776396592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57e618fbe69%3A0x411ac4fbd0494e5!2sFarmacia%20DyL!5e0!3m2!1ses-419!2sar!4v1666294145423!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
 
     <footer class="footer">
         <div class="content-footer">
             <div class="info-footer">
                 <h4 class="contenido-footer"><i class="fa-solid fa-phone"></i> Telefono: 1223333</h4>
-                
-                <h4 class="contenido-footer"> <i class="fa-solid fa-location-dot"></i>Ubicacion <a href="#">Googlemap</a></h4>
-               
-                <h4><i class="fa-solid fa-envelope"></i> Correo: <a href="mailto:atencioncliente@farmaciadyl.com.ar">atencioncliente@farmaciadyl.com.ar</a></h4>
-              
-                
-
+                <h4 class="contenido-footer"> <i class="fa-solid fa-location-dot"></i>Ubicacion <a href="#">Googlemap</a></h4> 
+                <h4><i class="fa-solid fa-envelope"></i> Correo: <a href="mailto:atencioncliente@farmaciadyl.com.ar">atencioncliente@farmaciadyl.com.ar</a></h4> 
             </div>
             <br><br>
             <div class="social-icons">
@@ -59,8 +69,6 @@
                     <h4> Datos obtenidos desde : <a href="#"> El lugar de los datos</a></h4>
                 </div>
             </div>
-           
-
         </div>
     </footer>
 
