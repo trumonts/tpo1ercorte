@@ -3,7 +3,8 @@
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
 }
-.contenedor{
+
+.contenedor {
     background-color: rgb(240, 236, 236);
     text-decoration: none;
     padding-top: 25px;
@@ -14,14 +15,16 @@
     align-content: center;
     font-size: small;
 }
-.item-menu{
+
+.item-menu {
     align-self: center;
     font-weight: bold;
     text-decoration: none;
-    color: rgb(59, 177, 171); ;
+    color: rgb(59, 177, 171);
+    ;
 }
 
-.contenedor img{
+.contenedor img {
     width: 200px;
     height: 50px;
 }
@@ -29,14 +32,14 @@
 .seccion1-nosotros {
     display: flex;
     justify-content: space-evenly;
-    font-size:smaller;
+    font-size: smaller;
     margin: 0px;
     align-items: center;
     padding: 5rem;
 
 }
 
-.texto-nosotros{
+.texto-nosotros {
     column-gap: 1px;
     font-size: 14px;
     line-height: 24px;
@@ -44,22 +47,124 @@
     font-weight: 400;
     flex-basis: 33%;
 }
-footer{
-    font-size: small;
-    background-color:  rgb(240, 236, 236);
+
+
+
+/*Estilos para pagina Productos*/
+
+.texto-productos{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
 }
+.parrafo-texto-productos{
+    font-size: 25px;
+    
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border-color: 5px solid rgb(240, 236, 236);
+    padding: 20px;
+}
+
+
+
+.productos {
+    /*background-color: aqua;*/
+    width: 75vw;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    box-shadow:
+        inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+        0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+}
+
+.item-productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    /*margin: 0 auto;*/
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.item-producto {
+    margin: 5px 0px 0px 5px;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+
+.img-producto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.item-producto-titulo {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    box-shadow: #fff;
+    width: fit-content;
+    margin: 0;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-contacto {
+    background-color: #323335cb;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Footer*/
+
+footer {
+    font-size: small;
+    background-color: rgb(240, 236, 236);
+}
+
 .info-footer {
     display: flex;
     justify-content: center;
     margin-top: 5em;
 }
 
-.info-footer h4{
+.info-footer h4 {
     margin-left: 25px;
     margin-top: 1rem;
-    
+
 }
-.social-icons{
+
+.social-icons {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
@@ -71,7 +176,8 @@ footer{
     from {
         margin-left: 100%;
         width: 300%;
-    } 
+    }
+
     to {
         margin-left: 0%;
         width: 100%;
@@ -81,33 +187,46 @@ footer{
 /*Test de Border Color Animation
   */
 
-    @keyframes rotate {
-        100% {
-            transform: rotate(1turn);
-        }
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
     }
+}
 
-.final-footer{
+.final-footer {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1em;
 }
-.contenedor-form{
+
+.contenedor-form {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin: 1rem;
     margin-left: 0;
     padding: 0;
 }
-form{
+
+form {
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
-iframe{
+label {
+    margin: 10px 0px 0px 0px;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+button {
+    margin-top: 15px;
+}
+
+iframe {
     padding: 1rem;
 }
