@@ -1,3 +1,5 @@
+
+
 let form =document.getElementById("formulario");
 
 function validar(){
@@ -40,3 +42,9 @@ form.addEventListener("submit", (e)=>{
        form.reset();
     }
 })
+
+
+
+
+
+
