@@ -66,6 +66,12 @@
 
 }
 
+.imagen-chica{
+    display: none;
+}
+.imagen-mediana{
+    display: none;
+}
 
 .texto-nosotros {
     column-gap: 1px;
@@ -321,6 +327,8 @@ footer {
     margin-bottom: 1em;
 }
 
+/* Estilo Formulario */
+
 .contenedor-form {
     display: flex;
     justify-content: center;
@@ -333,6 +341,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    padding: 10px;
 }
 
 .formulario__label {
@@ -356,61 +365,16 @@ footer {
     transition: .3s ease all;
 }
 
+
+
 .formulario__input:focus {
     border: 3px solid #0075FF;
     outline: none;
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
-.formulario__input-error {
-    font-size: 12px;
-    margin-bottom: 0;
-    display: none;
-}
-
-.formulario__input-error-activo {
-    display: block;
-}
-
-.formulario__validacion-estado {
-    position: absolute;
-    right: 10px;
-    bottom: 15px;
-    z-index: 100;
-    font-size: 16px;
-    opacity: 0;
-}
-
-.formulario__validacion-estado-incorrecto {
-    position: absolute;
-    right: 10px;
-    bottom: 15px;
-    z-index: 100;
-    font-size: 16px;
-    color: red;
-
-}
-
-.formulario__mensaje,
 .formulario__grupo-btn-enviar {
     grid-column: span 2;
-}
-
-.formulario__mensaje {
-    height: 45px;
-    line-height: 45px;
-    background-color: #f66060;
-    padding: 0 15px;
-    border-radius: 3px;
-    display: none;
-}
-
-.formulario__mensaje-activo {
-    display: block;
-}
-
-.formulario__mensaje p {
-    margin: 0;
 }
 
 .formulario__grupo-btn-enviar {
@@ -432,14 +396,15 @@ footer {
     transition: .1s ease all;
 }
 
-.formulario__mensaje-exito {
-    font-size: 14px;
-    color: green;
-    display: none;
+textarea{
+    border: 3px normal;
+    border-radius: 3px;
+    grid-column: span 2;
 }
-
-.formulario__mensaje-exito-activo {
-    display: block;
+textarea:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);  
 }
 
 iframe {
@@ -449,43 +414,35 @@ iframe {
 /*Puntos de corte 800 600*/
 
 /*Breakpoint 800px*/
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 640px) and (max-width: 1280px){
 
     /*------ Estilos Inicio -------*/
 
     .seccion1-nosotros {
-        display: flex;
+        display:flex;
         flex-direction: column;
         justify-content: space-evenly;
-
         font-size: smaller;
         margin: 0px;
         align-items: center;
-        padding: 5rem;
+
+    }
+    .imagen-grande{
+        display: none;
     }
 
+    .imagen-mediana{
+        display: block;
+    }
     .titulo-nosotros {
         text-align: center;
         margin-top: 0.5rem;
-
-
     }
 
     .seccion1-nosotros p {
         text-align: justify;
         text-indent: 1.5em;
     }
-
-    .imagen-central {
-        margin: 5px;
-        width: fit-content;
-
-    }
-
-
-
-
-
 
 
     .contenedor-form {
@@ -498,7 +455,6 @@ iframe {
         margin: 1%;
     }
 
-    .formulario__mensaje,
     .formulario__grupo-btn-enviar {
         grid-column: 1;
     }
@@ -506,12 +462,18 @@ iframe {
     .formulario__btn {
         width: 100%;
     }
-
+    .contenedor{
+        background-color: rgb(240, 236, 236);
+        text-decoration: none;
+        display: flex;
+        width: 100%;
+        border: 1px goldenrod solid;
+    }
 
 }
 
 /* Breakpoint 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
 
     /*Estilo para menu*/
     .contenedor {
@@ -522,11 +484,17 @@ iframe {
         padding-bottom: 25px;
         display: flex;
         flex-direction: column;
-
         align-content: center;
         font-size: large;
         width: 100%;
         border: 1px goldenrod solid;
+    }
+    .imagen-grande{
+        display: none;
+    }
+
+    .imagen-chica{
+        display: block;
     }
 
     /*Estilo formulario*/
@@ -550,7 +518,6 @@ iframe {
         width: 80%;
     }
 
-    .formulario__mensaje,
     .formulario__grupo-btn-enviar {
         grid-column: 1;
     }
