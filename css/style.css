@@ -352,11 +352,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-<<<<<<< HEAD
     padding: 10px;
-=======
-
->>>>>>> 233bce0675dbc7d082ee195776148a67443b5023
 }
 
 .formulario__label {
@@ -459,8 +455,6 @@ iframe {
         text-indent: 1.5em;
     }
 
-<<<<<<< HEAD
-=======
     .imagen-central {
         margin: 5px;
         width: fit-content;
@@ -481,7 +475,6 @@ iframe {
 
 
 
->>>>>>> 233bce0675dbc7d082ee195776148a67443b5023
 
     .contenedor-form {
         flex-direction: column;
