@@ -38,9 +38,13 @@
     padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    font-size: small;
+    align-items: center;
+       font-size: large;
     width: 100%;
+}
+
+.contenedor a{
+    padding-left: 25px;
 }
 
 .item-menu {
@@ -48,12 +52,24 @@
     font-weight: bold;
     text-decoration: none;
     color: rgb(59, 177, 171);
-    ;
+    
+}
+
+
+.contenedor-logo a{
+    text-align: left;
+
+
 }
 
 .contenedor img {
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: auto;
+    
+}
+
+.parrafo-texto{
+    margin-left: 15px;
 }
 
 .seccion1-nosotros {
@@ -64,13 +80,14 @@
     align-items: center;
     padding: 5rem;
     column-gap: 5px;
-
 }
 
-.imagen-chica{
+
+.imagen-chica {
     display: none;
 }
-.imagen-mediana{
+
+.imagen-mediana {
     display: none;
 }
 
@@ -101,6 +118,7 @@
 
 .parrafo-texto-productos {
     font-size: 25px;
+
 
 }
 
@@ -226,18 +244,18 @@
     margin-top: 25px;
     text-align: right;
     color: black;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
     position: relative;
     font-weight: bolder;
     font-style: oblique;
     margin: 5px;
+
 }
 
 /*Imagenes Alquileres*/
 
 .contenedor-alquileres {
-
     width: 80vw;
+    height: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -252,37 +270,48 @@
 }
 
 .contenedor-alquileres-flex {
-
     display: flex;
     justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     border-color: 5px solid rgb(237, 240, 236);
     margin: 10px;
 }
 
-
-
-
 .contenedor-imagenes-alquiler-grid {
     display: grid;
-    width: 90%;
-    grid-template-columns: 25% 25% 25% 25%;
+   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     grid-auto-rows: max-content;
     row-gap: 10px;
     column-gap: 10px;
-    margin: 10px 10px;
+    margin: 0px;
     box-sizing: border-box;
+    align-items: center;
+   
+
 
 }
+
+.contenedor-alquiler {
+    text-align: center;
+    align-self: center;
+}
+
+
 
 .item-imagen-alquiler {
     width: 100%;
     height: 100%;
     object-fit: cover;
     box-sizing: border-box;
+    border: 2px solid #5ad5eea8;
 }
 
-
+.titulo-alquiler {
+    text-align: center;
+}
 
 /* Footer*/
 
@@ -407,15 +436,16 @@ footer {
     transition: .1s ease all;
 }
 
-textarea{
+textarea {
     border: 3px normal;
     border-radius: 3px;
     grid-column: span 2;
 }
-textarea:focus{
+
+textarea:focus {
     border: 3px solid #0075FF;
     outline: none;
-    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);  
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
 
 iframe {
@@ -425,12 +455,12 @@ iframe {
 /*Puntos de corte 800 600*/
 
 /*Breakpoint 800px*/
-@media screen and (min-width: 640px) and (max-width: 1280px){
+@media screen and (min-width: 640px) and (max-width: 1280px) {
 
     /*------ Estilos Inicio -------*/
 
     .seccion1-nosotros {
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         font-size: smaller;
@@ -438,13 +468,15 @@ iframe {
         align-items: center;
 
     }
-    .imagen-grande{
+
+    .imagen-grande {
         display: none;
     }
 
-    .imagen-mediana{
+    .imagen-mediana {
         display: block;
     }
+
     .titulo-nosotros {
         text-align: center;
         margin-top: 0.5rem;
@@ -462,7 +494,7 @@ iframe {
     }
 
 
-    /* Estilo 800 para Producto*/
+    /* Estilo para Producto*/
     .item-productos-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -474,6 +506,17 @@ iframe {
     }
 
 
+
+    /*Estilos para Alquiler*/
+
+    .contenedor-imagenes-alquiler-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .titulo-alquiler {
+        font-size: medium;
+    }
 
 
     .contenedor-form {
@@ -493,21 +536,24 @@ iframe {
     .formulario__btn {
         width: 100%;
     }
-    .contenedor{
+
+    .contenedor {
         background-color: rgb(240, 236, 236);
         text-decoration: none;
         display: flex;
         width: 100%;
         border: 1px goldenrod solid;
     }
+    
 
 }
 
-/* Breakpoint 600px */
+
+
+
+
+/* Breakpoint 640px */
 @media screen and (max-width: 640px) {
-
-
-
 
     /*Estilo para menu*/
     .contenedor {
@@ -523,11 +569,27 @@ iframe {
         width: 100%;
         border: 1px goldenrod solid;
     }
-    .imagen-grande{
+
+    .contenedor a{
+        padding-left: 25px;
+    }
+
+.contenedor-logo{
+    text-align: center;
+    padding-right: 15px;
+}
+    .contenedor-menu{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+
+    .imagen-grande {
         display: none;
     }
 
-    .imagen-chica{
+    .imagen-chica {
         display: block;
     }
 
@@ -541,6 +603,31 @@ iframe {
     .item-producto-titulo {
         font-size: 100%;
     }
+
+/*Estilos Alquiler*/
+
+.contenedor-titulo-alquiler {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:baseline;
+    margin-top: 25px;
+    background-image: url("../img/background.jpg");
+    height: fit-content;
+    background-size:cover;
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 130px 0;
+}
+    .contenedor-imagenes-alquiler-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .titulo-alquiler {
+        font-size: 100%;
+    }
+
 
     /*Estilo formulario*/
     .contenedor-form {
@@ -578,7 +665,21 @@ iframe {
 
     }
 
+
+    .contacto {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .contacto a {
+        margin-bottom: 10px;
+    }
+
     /*------ Estilos Inicio -------*/
+    .texto-informativo{
+        font-size: 2em;
+    }
 
     .seccion1-nosotros {
         display: flex;

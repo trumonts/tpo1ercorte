@@ -12,12 +12,22 @@
 
 <body>
     <header>
+
+        <div class="contenedor-texto-informativo">
+            <h1 class="texto-informativo"> Alquiler de Productos.</h1>
+
+        </div>
         <div class="contenedor">
-            <a href="Index.html"> <img src="./img/shop1255000.logo.png" alt="" class="logo"></a>
+            <div class="contenedor-logo">
+                <a href="Index.html"> <img src="./img/shop1255000.logo.png" alt="" class="logo"></a>
+            </div>
+           <div class="contenedor-menu">
             <a href="./Index.html" class="item-menu">INICIO</a>
             <a href="./productos.html" class="item-menu">PRODUCTOS</a>
             <a href="./alquileres.html" class="item-menu">ALQUILERES</a>
             <a href="./contacto.html" class="item-menu"> CONTACTO</a>
+           </div>
+       
 
 
         </div>
@@ -40,23 +50,65 @@
 
     <div class="contenedor-contacto">
         <div class="contacto">
-            <p class="texto-contacto"> Contactános para mas informacion</p>
+            <p class="texto-contacto"> Contactanós para mas informacion</p>
             <a href="./contacto.html" class="boton-contacto"> Hablá con nosotros.</a>
         </div>
     </div>
     <br>
     <section class="contenedor-alquileres">
-        
+
         <div class="contenedor-alquileres-flex">
             <div class="contenedor-imagenes-alquiler-grid">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
-                <img src="https://placeimg.com/320/240/any" alt="" class="item-imagen-alquiler">
+
+                <div class="contenedor-alquiler">
+                    <div class="item-alquiler">
+                        <h1 class="titulo-alquiler"> Muletas</h1>
+                        <img src="./img/Muleta 2.jpeg" alt="" class="item-imagen-alquiler">
+                    </div>
+                </div>
+
+                <div class="contenedor-alquiler">
+                    <div class="item-alquiler">
+                        <h1 class="titulo-alquiler"> Vias Respiratorias </h1>
+                        <img src="./img/Aerocamara Pediatrico.jpeg" alt="" class="item-imagen-alquiler">
+                    </div>
+                </div>
+
+                <div class="contenedor-alquiler">
+                    <div class="item-alquiler">
+                        <h1 class="titulo-alquiler">Sillas de Ruedas </h1>
+                        <img src="./img/silla-de-ruedas.jpg" alt="" class="item-imagen-alquiler">
+                    </div>
+                </div>
+
+
+                <div class="contenedor-alquiler">
+                    <div class="item-alquiler">
+                        <h1 class="titulo-alquiler">Andadores </h1>
+                        <img src="./img/andador asiento.jpg" alt="" class="item-imagen-alquiler">
+                    </div>
+                </div>
+
+                <div class="contenedor-alquiler">
+                    <div class="item-alquiler">
+                        <h1 class="titulo-alquiler">Rehabilitación</h1>
+                        <img src="./img/pedalera.jpg" alt="" class="item-imagen-alquiler">
+                    </div>
+                </div>
+
+
+
+                <div class="contenedor-alquiler">
+
+                    <div class="item-alquiler">
+                        <h1 class="titulo-alquiler">Scooter </h1>
+                        <img src="./img/scooter.jpg" alt="" class="item-imagen-alquiler">
+                    </div>
+
+                </div>
+
+
+
             </div>
 
         </div>
@@ -94,21 +146,21 @@
 
 
         </div>
- 
-
-    <script>
-        const api_url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
-        async function cotizacionDolar() {
-            const response = await fetch(api_url)
-            const data = await response.json()
-            console.log(data)
-            document.getElementById("cotizacion").textContent = data[1].casa.venta
-
-        }
-        cotizacionDolar()
 
 
-    </script>
+        <script>
+            const api_url = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
+            async function cotizacionDolar() {
+                const response = await fetch(api_url)
+                const data = await response.json()
+                console.log(data)
+                document.getElementById("cotizacion").textContent = data[1].casa.venta
+
+            }
+            cotizacionDolar()
+
+
+        </script>
     </footer>
 </body>
 
