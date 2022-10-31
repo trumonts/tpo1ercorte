@@ -11,7 +11,7 @@
 }
 
 .texto-informativo {
-    color: transparent;
+  color: transparent;
     background-clip: text;
     -webkit-background-clip: text, border;    
     background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700); 
