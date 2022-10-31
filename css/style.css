@@ -238,7 +238,17 @@
     padding: 130px 0;
 }
 
-
+.titulo-alquiler-h1{
+    display: block;
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: relative;
+    font-weight: bolder;
+    font-style: oblique;
+    margin: 5px
+}
 .titulo-alquiler {
     display: block;
     margin-top: 25px;
@@ -248,6 +258,7 @@
     font-weight: bolder;
     font-style: oblique;
     margin: 5px;
+
 
 }
 
