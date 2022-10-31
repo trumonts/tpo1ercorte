@@ -11,10 +11,10 @@
 }
 
 .texto-informativo {
-  color: transparent;
+    color: transparent;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
     background-clip: text;
-    -webkit-background-clip: text, border;    
-    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700); 
+    -webkit-background-clip: text, border; 
     animation: color 3s linear infinite;
     background-size: 50%;
     text-align: center;
