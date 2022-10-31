@@ -11,7 +11,7 @@
 }
 
 .texto-informativo {
-    color: transparent;
+    color: black;
     background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
     background-clip: text;
     animation: color 3s linear infinite;
